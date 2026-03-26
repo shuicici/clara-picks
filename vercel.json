@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "public": true,
+  "protection": {
+    "bypassHeader": "x-robots-tag: noindex"
+  }
+}
