@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara's Picks — Curated Product Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #faf8f5; color: #2d2d2d; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .hero { background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%); padding: 80px 0 60px; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; color: #3a2e2a; margin-bottom: 16px; }
+    .hero p { font-size: 1.1rem; color: #6b5a52; max-width: 560px; margin: 0 auto; }
+
+    .products { padding: 60px 0; }
+    .products h2 { font-size: 1.8rem; font-weight: 700; text-align: center; margin-bottom: 40px; color: #3a2e2a; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .product-card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .product-card:hover { transform: translateY(-4px); }
+    .product-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; margin-bottom: 12px; }
+    .product-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; color: #2d2d2d; }
+    .product-price { font-size: 1.4rem; font-weight: 700; color: #c97a5a; margin-bottom: 10px; }
+    .product-card p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+    .btn { display: inline-block; background: #c97a5a; color: #fff; text-decoration: none; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .btn:hover { background: #b56a4a; }
+
+    .about { background: #fff; padding: 60px 0; }
+    .about-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+    .about h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #3a2e2a; }
+    .about p { color: #555; font-size: 1rem; }
+
+    .social { padding: 40px 0; text-align: center; }
+    .social h3 { font-size: 1rem; color: #888; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+    .social-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .social-link { display: inline-flex; align-items: center; gap: 6px; color: #c97a5a; text-decoration: none; font-weight: 500; font-size: 0.9rem; padding: 8px 16px; border: 1.5px solid #e8d5c4; border-radius: 8px; transition: all 0.2s; }
+    .social-link:hover { background: #f5e6d3; border-color: #c97a5a; }
+
+    footer { background: #3a2e2a; color: #c4a89a; padding: 32px 0; text-align: center; font-size: 0.8rem; }
+    footer p { max-width: 600px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <h1>Clara's Picks</h1>
+      <p>Curated product recommendations — rigorously tested, honestly reviewed. I only share what I truly believe in.</p>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <h2>Featured Recommendations</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <span class="product-badge">Top Pick</span>
+          <h3>Omnilux LED Face Mask</h3>
+          <div class="product-price">$349</div>
+          <p>FDA-cleared red light therapy for anti-aging. Forbes Vetted — March 2026. Transformative skincare without clinical visits.</p>
+          <a href="#" class="btn">Check Price</a>
+        </div>
+        <div class="product-card">
+          <span class="product-badge">Smart Pet</span>
+          <h3>PETLIBRO Luma Auto Litter Box</h3>
+          <div class="product-price">$299</div>
+          <p>AI-powered waste analysis tracks your cat's health. Multi-cat identification. App notifications while you're away.</p>
+          <a href="#" class="btn">Check Price</a>
+        </div>
+        <div class="product-card">
+          <span class="product-badge">Wellness</span>
+          <h3>Ergonomic Home Office Chair</h3>
+          <div class="product-price">$399</div>
+          <p>Full lumbar support, breathable mesh, adjustable armrests. Built for 8+ hour workdays without discomfort.</p>
+          <a href="#" class="btn">Check Price</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about-inner">
+        <h2>Hi, I'm Clara 👋</h2>
+        <p>I research and test products so you don't have to. Every recommendation here is backed by real reviews, genuine data, and hands-on testing. No fluff, no sponsored hype — just honest picks that are worth your money.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="container">
+      <h3>Find Me On</h3>
+      <div class="social-links">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">TikTok</a>
+        <a href="#" class="social-link">YouTube</a>
+        <a href="#" class="social-link">小红书</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>⚠️ Affiliate Disclosure: Some links on this page are affiliate links. I may earn a commission at no extra cost to you if you make a purchase through these links, which helps support my research and recommendations.</p>
+    </div>
+  </footer>
+</body>
+</html>
